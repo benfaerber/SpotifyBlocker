@@ -41,8 +41,6 @@ payload = '''
 127.0.0.1 cs126.wpc.teliasoneracdn.net
 127.0.0.1 heads-ec.spotify.com
 127.0.0.1 u.scdn.co
-# Yeasty's Spotify Ad-Blocker
-# Enjoy ;)
 127.0.0.1 cs126.wpc.edgecastcdn.net
 127.0.0.1 pagead46.l.doubleclick.net
 127.0.0.1 pagead.l.doubleclick.net
