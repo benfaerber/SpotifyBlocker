@@ -3,14 +3,14 @@
 import os, platform
 
 print("Spotify Permanent Ad-blocker")
-raw_input("Push any key to start.\n")
+raw_input("Push any enter to start.\n")
 
 #This maps all of Spotify's AD urls to 127.0.0.1 which means the local system
 #Basically it just makes all the sites impossible to reach
 #When Spotify tries to load an ad it thinks it's offline, however the music data isn't blocked so it still plays
 payload = '''
 \n
-# Block Spotify Ads URLS
+# Start Block Spotify Ads URLS
 127.0.0.1 media-match.com
 127.0.0.1 adclick.g.doublecklick.net
 127.0.0.1 http://www.googleadservices.com
@@ -62,7 +62,7 @@ payload = '''
 127.0.0.1 geo3.ggpht.com
 127.0.0.1 showads33000.pubmatic.com
 127.0.0.1 spclient.wg.spotify.com
-# End
+# End Block Spotify Ads URLS
 '''
 
 # This detects your os and if you have a Mac it maps that data
@@ -80,7 +80,7 @@ elif (op == "Mac"):
 elif (op == "Windows"):
 	ho = "C:\Windows\System32\drivers\etc\hosts"
 
-# Last but not least it attempts to inject the payload
+# Last but not least, it attempts to inject the payload
 try:
 	with open(ho, "a") as f:
 		f.write(payload)
