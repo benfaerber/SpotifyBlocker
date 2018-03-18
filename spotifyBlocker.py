@@ -3,7 +3,6 @@
 import os, platform
 
 print("Spotify Permanent Ad-blocker")
-raw_input("Push any enter to start.\n")
 
 #This maps all of Spotify's AD urls to 127.0.0.1 which means the local system
 #Basically it just makes all the sites impossible to reach
@@ -75,10 +74,13 @@ if (op == "Darwin"):
 ho = ""
 if (op == "Linux"):
 	ho = "/etc/hosts"
+	raw_input("Push any enter to start.\n")
 elif (op == "Mac"):
 	ho = "/private/etc/hosts"
+	raw_input("Push any enter to start.\n")
 elif (op == "Windows"):
 	ho = "C:\Windows\System32\drivers\etc\hosts"
+	input("Push any enter to start.\n")
 
 # Last but not least, it attempts to inject the payload
 try:
