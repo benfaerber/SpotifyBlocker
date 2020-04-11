@@ -88,7 +88,7 @@ try:
 		f.write(payload)
 		print("Success!")
 		print("You may need to either reboot your computer or reopen Spotify for this to work.")
-		print("You needn't run this program again and can delete it if you choose.")
+		print("You don't need to run this program again and can delete it if you choose.")
 except:
 	print("There was an error! This is likley due to limited permissions.")
 	if (op == "Linux" or op == "Mac"):
